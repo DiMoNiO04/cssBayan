@@ -4,7 +4,7 @@ body{
 }
 
 .memes{
-	max-width: 77%;
+	max-width: 75%;
 	margin: 0 auto;
 	box-sizing: border-box;
 	padding: 0 1rem;
@@ -22,7 +22,7 @@ body{
 
 .meme{
 	border-bottom: 0.05rem solid black;
-	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
 }
 
 
@@ -30,10 +30,10 @@ body{
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
-	padding-bottom: 2rem;
+	padding-top: 1rem;
 	width: 50%;
 	height: auto;
-	/* display: none; */
+	display: none;
 }
 
 .meme__img img{
@@ -42,15 +42,59 @@ body{
 }
 
 .meme__title {
-	display: block;
 	cursor: pointer;
 	font-size: 2.2rem;
 	font-weight: 700;
+	color: blue;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
 }
 
 .meme__input{
 	appearance: none;
 }
+
+
+.meme__buttons{
+	width: 30px;
+	height: 18px;
+	display: inline-flex;
+	flex-direction: column;
+	row-gap: 10px;
+}
+
+.meme__buttons span{
+	display: block;
+	width: 30px;
+	height: 5px;
+	background: blue;
+	border-radius: 1rem;
+}
+
+.meme__buttons span:first-child{
+	transform: rotate(90deg);
+}
+
+.meme__buttons span:last-child{
+	margin-top: -50%;
+}
+
+
+
+.meme:hover .meme__title{
+	color: black;
+	transition: 0.25s ease-in-out;
+}
+
+.meme:hover .meme__img{
+	display: block;
+}
+
+
+
+
+
 
 
 @media screen and (max-width: 1020px){
