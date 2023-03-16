@@ -51,6 +51,10 @@
 		display: flex;
 		justify-content: space-between;
 	}
+
+	.meme__title h3{
+		margin: 0;
+	}
 	
 	.meme__input{
 		appearance: none;
@@ -70,6 +74,14 @@
 
 	.meme__input:checked ~ .meme__content .meme__img{
 		animation: fadeInImage 1.5s ease-in-out;
+	}
+
+	.meme:active .meme__title h3{
+		color: rgb(72, 72, 249);
+	}
+	
+	.meme:active .meme__img{
+		opacity: 0.7;
 	}
 }
 
